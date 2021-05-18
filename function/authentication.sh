@@ -13,7 +13,7 @@ authentication_token ()
         "id":0
     }
     '
-    TOKEN=$(curl -s -X POST -H "${HEADER}" -d "${JSON}" ${ZABBIX_URL} | cut -d'"' -f8)
+    TOKEN=$(curl -s -X POST -H "${HEADER}" -d "${JSON}" ${ZABBIX_URL}/api_jsonrpc.php | cut -d'"' -f8)
 
     echo "Obtained token [ ${TOKEN} ]"
 }
