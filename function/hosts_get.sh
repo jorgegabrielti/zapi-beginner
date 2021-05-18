@@ -9,7 +9,9 @@ hosts_get ()
     		"output": [
     			"hostid ",
     			"host"
-    		]
+    		],
+            "sortfield":"name",
+            "sortordes":"DESC"
     	},
     	"auth": "'$TOKEN'",
     	"id": 1
